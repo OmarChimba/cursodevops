@@ -12,8 +12,7 @@ jobs:
     steps:
     
       - name: Hola Mundo
-        run: echo Hello, world!!!!!!!!!
-      
+        run: echo Hello, world!!!!!
       - name: Imprimir multiples lineas
         run: |
           echo Add other actions to build,
