@@ -19,11 +19,15 @@ jobs:
         uses: actions/setup-node@v5.0.0
       
       - name: Imprimir multiples lineas
+      
         run: |
           echo "Valor de la plataforma: ${{env.platform}} "
           echo "Valor de la region: ${{env.region}} "
           echo "Valor de la cuenta: ${{env.acount}}"
-         
+          echo "Valor de la Githubaction: $GITHUB_ACTION"
+          echo "Valor del Actor: $GITHUB_ACTOR"
+          
+          
   deployar:
     
     runs-on: ubuntu-latest
